@@ -1,4 +1,4 @@
-name: "Deploy to AWS S3"
+name: "Deploy to AWS S3 with Python"
 description: "Deploy a statis website via AWS S3."
 inputs:
   bucket:
@@ -14,8 +14,6 @@ inputs:
 outputs:
   website-url:
     description: "The url for the hosted website."
-    # DO NOT DEFINE OUTPUT HERE. WE DO THAT FROM INSIDE OF main.js FILE
 runs:
-  using: node24
-  # name of the file that should be executred for this custom action
-  main: main.js
+  using: "docker"
+  image: "Dockerfile"
