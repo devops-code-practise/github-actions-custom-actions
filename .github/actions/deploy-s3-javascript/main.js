@@ -3,7 +3,7 @@ const github = requite("@actions/github");
 const exec = requite("@actions/exec");
 
 function run() {
-  core.noticce("Custom JS Actions");
+  core.notice("Custom JS Actions");
 }
 
 run();
