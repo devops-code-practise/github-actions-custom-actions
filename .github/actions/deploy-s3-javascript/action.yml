@@ -1,5 +1,16 @@
 name: "Deploy yo AWS S3"
 description: "Deploy a statis website via AWS S3."
+inputs:
+  bucket:
+    description: "The S3 bucket name."
+    required: true
+  region:
+    description: "The S3 region."
+    required: false
+    default: "us-east-1"
+  dist-folder:
+    description: "The folder containing the deployable files."
+    required: true
 runs:
   using: node24
   # name of the file that should be executred for this custom action
