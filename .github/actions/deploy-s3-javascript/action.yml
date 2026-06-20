@@ -11,6 +11,10 @@ inputs:
   dist-folder:
     description: "The folder containing the deployable files."
     required: true
+outputs:
+  website-url:
+    description: "The url for the hosted website."
+    # DO NOT DEFINE OUTPUT HERE. WE DO THAT FROM INSIDE OF main.js FILE
 runs:
   using: node24
   # name of the file that should be executred for this custom action
